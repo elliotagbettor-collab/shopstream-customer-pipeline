@@ -1,0 +1,64 @@
+2026-05-19 21:08:36,691 - shopstream_pipeline - INFO - Generated website CSV: 1020 records
+2026-05-19 21:08:36,749 - shopstream_pipeline - INFO - Generated CRM JSON: 500 records
+2026-05-19 21:08:36,773 - shopstream_pipeline - INFO - Generated ERP fixed-width: 250 records
+2026-05-19 21:08:36,773 - shopstream_pipeline - INFO - Synthetic data generation complete.
+2026-05-19 22:07:21,288 - shopstream_pipeline - INFO - ============================================================
+2026-05-19 22:07:21,289 - shopstream_pipeline - INFO - STEP 1: Data Ingestion
+2026-05-19 22:07:21,289 - shopstream_pipeline - INFO - Ingesting website CSV: data\raw\website_customers.csv
+2026-05-19 22:07:21,308 - shopstream_pipeline - INFO -   Removed 20 test accounts
+2026-05-19 22:07:21,310 - shopstream_pipeline - INFO -   Ingested 1000 records from website CSV
+2026-05-19 22:07:21,311 - shopstream_pipeline - INFO - Ingesting CRM JSON: data\raw\crm_export.json
+2026-05-19 22:07:21,334 - shopstream_pipeline - INFO -   Ingested 500 records from CRM JSON
+2026-05-19 22:07:21,336 - shopstream_pipeline - INFO - Ingesting ERP fixed-width: data\raw\erp_customers.txt
+2026-05-19 22:08:37,000 - shopstream_pipeline - INFO - ============================================================
+2026-05-19 22:08:37,000 - shopstream_pipeline - INFO - STEP 1: Data Ingestion
+2026-05-19 22:08:37,000 - shopstream_pipeline - INFO - Ingesting website CSV: data\raw\website_customers.csv
+2026-05-19 22:08:37,015 - shopstream_pipeline - INFO -   Removed 20 test accounts
+2026-05-19 22:08:37,016 - shopstream_pipeline - INFO -   Ingested 1000 records from website CSV
+2026-05-19 22:08:37,017 - shopstream_pipeline - INFO - Ingesting CRM JSON: data\raw\crm_export.json
+2026-05-19 22:08:37,023 - shopstream_pipeline - INFO -   Ingested 500 records from CRM JSON
+2026-05-19 22:08:37,024 - shopstream_pipeline - INFO - Ingesting ERP fixed-width: data\raw\erp_customers.txt
+2026-05-19 22:08:37,032 - shopstream_pipeline - INFO -   Ingested 250 records from ERP
+2026-05-19 22:08:37,035 - shopstream_pipeline - INFO - Total records combined: 1750
+2026-05-19 22:08:37,036 - shopstream_pipeline - INFO -   website: 1000 records
+2026-05-19 22:08:37,036 - shopstream_pipeline - INFO -   crm: 500 records
+2026-05-19 22:08:37,036 - shopstream_pipeline - INFO -   erp: 250 records
+2026-05-19 22:09:08,385 - shopstream_pipeline - INFO - ============================================================
+2026-05-19 22:09:08,385 - shopstream_pipeline - INFO - STEP 1: Data Ingestion
+2026-05-19 22:09:08,385 - shopstream_pipeline - INFO - Ingesting website CSV: data\raw\website_customers.csv
+2026-05-19 22:09:08,400 - shopstream_pipeline - INFO -   Removed 20 test accounts
+2026-05-19 22:09:08,401 - shopstream_pipeline - INFO -   Ingested 1000 records from website CSV
+2026-05-19 22:09:08,402 - shopstream_pipeline - INFO - Ingesting CRM JSON: data\raw\crm_export.json
+2026-05-19 22:09:08,409 - shopstream_pipeline - INFO -   Ingested 500 records from CRM JSON
+2026-05-19 22:09:08,411 - shopstream_pipeline - INFO - Ingesting ERP fixed-width: data\raw\erp_customers.txt
+2026-05-19 22:09:08,419 - shopstream_pipeline - INFO -   Ingested 250 records from ERP
+2026-05-19 22:09:08,421 - shopstream_pipeline - INFO - Total records combined: 1750
+2026-05-19 22:09:08,422 - shopstream_pipeline - INFO -   website: 1000 records
+2026-05-19 22:09:08,423 - shopstream_pipeline - INFO -   crm: 500 records
+2026-05-19 22:09:08,423 - shopstream_pipeline - INFO -   erp: 250 records
+2026-05-19 22:10:41,938 - shopstream_pipeline - INFO - ============================================================
+2026-05-19 22:10:41,938 - shopstream_pipeline - INFO - STEP 1: Data Ingestion
+2026-05-19 22:10:41,938 - shopstream_pipeline - INFO - Ingesting website CSV: data\raw\website_customers.csv
+2026-05-19 22:10:41,952 - shopstream_pipeline - INFO -   Removed 20 test accounts
+2026-05-19 22:10:41,953 - shopstream_pipeline - INFO -   Ingested 1000 records from website CSV
+2026-05-19 22:10:41,953 - shopstream_pipeline - INFO - Ingesting CRM JSON: data\raw\crm_export.json
+2026-05-19 22:10:41,959 - shopstream_pipeline - INFO -   Ingested 500 records from CRM JSON
+2026-05-19 22:10:41,960 - shopstream_pipeline - INFO - Ingesting ERP fixed-width: data\raw\erp_customers.txt
+2026-05-19 22:10:41,965 - shopstream_pipeline - INFO -   Ingested 250 records from ERP
+2026-05-19 22:10:41,966 - shopstream_pipeline - INFO - Total records combined: 1750
+2026-05-19 22:10:41,967 - shopstream_pipeline - INFO -   website: 1000 records
+2026-05-19 22:10:41,968 - shopstream_pipeline - INFO -   crm: 500 records
+2026-05-19 22:10:41,968 - shopstream_pipeline - INFO -   erp: 250 records
+2026-05-19 22:10:56,309 - shopstream_pipeline - INFO - ============================================================
+2026-05-19 22:10:56,310 - shopstream_pipeline - INFO - STEP 1: Data Ingestion
+2026-05-19 22:10:56,310 - shopstream_pipeline - INFO - Ingesting website CSV: data\raw\website_customers.csv
+2026-05-19 22:10:56,327 - shopstream_pipeline - INFO -   Removed 20 test accounts
+2026-05-19 22:10:56,327 - shopstream_pipeline - INFO -   Ingested 1000 records from website CSV
+2026-05-19 22:10:56,328 - shopstream_pipeline - INFO - Ingesting CRM JSON: data\raw\crm_export.json
+2026-05-19 22:10:56,335 - shopstream_pipeline - INFO -   Ingested 500 records from CRM JSON
+2026-05-19 22:10:56,337 - shopstream_pipeline - INFO - Ingesting ERP fixed-width: data\raw\erp_customers.txt
+2026-05-19 22:10:56,342 - shopstream_pipeline - INFO -   Ingested 250 records from ERP
+2026-05-19 22:10:56,344 - shopstream_pipeline - INFO - Total records combined: 1750
+2026-05-19 22:10:56,345 - shopstream_pipeline - INFO -   website: 1000 records
+2026-05-19 22:10:56,346 - shopstream_pipeline - INFO -   crm: 500 records
+2026-05-19 22:10:56,346 - shopstream_pipeline - INFO -   erp: 250 records
