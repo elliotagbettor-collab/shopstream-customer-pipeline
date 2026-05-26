@@ -63,14 +63,14 @@ class DataQualityValidator:
         logger.info("DATA QUALITY REPORT")
         logger.info("=" * 60)
         for r in self.results:
-            icon = "✓" if r["status"] == "PASS" else "✗"
+            icon = "PASS" if r["status"] == "PASS" else "FAIL"
             logger.info(
                 f"  [{icon}] {r['check']}: {r['pass_rate']:.1%} "
                 f"({r['failed']} failed of {r['total']})"
             )
         overall = (report["status"] == "PASS").all()
         logger.info("=" * 60)
-        logger.info(f"  OVERALL: {'ALL CHECKS PASSED ✓' if overall else 'SOME CHECKS FAILED ✗'}")
+        logger.info(f"  OVERALL: {'ALL CHECKS PASSED' if overall else 'SOME CHECKS FAILED'}")
         logger.info("=" * 60)
         return report
 

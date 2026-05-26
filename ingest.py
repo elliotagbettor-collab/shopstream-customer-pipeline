@@ -7,6 +7,24 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
+
+def parse_bool_like(value):
+    if pd.isna(value):
+        return pd.NA
+    if isinstance(value, bool):
+        return value
+
+    normalized = str(value).strip().lower()
+    if normalized in {"1", "true", "yes", "y", "t", "opted_out", "opt_out", "optout", "opt-out"}:
+        return True
+    if normalized in {"0", "false", "no", "n", "none", "nan", ""}:
+        return False
+    return pd.NA
+
+
+def normalize_opt_out(series: pd.Series) -> pd.Series:
+    return series.map(parse_bool_like).astype("boolean")
+
 # ── Logging Setup ──────────────────────────────────────────────────────────────
 project_root = Path(__file__).resolve().parent.parent.parent
 if str(project_root) not in sys.path:
@@ -224,6 +242,8 @@ def align_schema(df: pd.DataFrame, source_name: str) -> pd.DataFrame:
     for col in STANDARD_SCHEMA:
         if col not in df.columns:
             df[col] = np.nan
+
+    df["opt_out"] = normalize_opt_out(df["opt_out"])
     return df[STANDARD_SCHEMA].copy()
 
 

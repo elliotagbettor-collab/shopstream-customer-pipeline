@@ -62,3 +62,63 @@
 2026-05-19 22:10:56,345 - shopstream_pipeline - INFO -   website: 1000 records
 2026-05-19 22:10:56,346 - shopstream_pipeline - INFO -   crm: 500 records
 2026-05-19 22:10:56,346 - shopstream_pipeline - INFO -   erp: 250 records
+2026-05-26 16:22:54,196 - shopstream_pipeline - INFO - ============================================================
+2026-05-26 16:22:54,197 - shopstream_pipeline - INFO - STEP 1: Data Ingestion
+2026-05-26 16:22:54,197 - shopstream_pipeline - INFO - Ingesting website CSV: data\raw\website_customers.csv
+2026-05-26 16:22:54,341 - shopstream_pipeline - INFO -   Removed 20 test accounts
+2026-05-26 16:22:54,344 - shopstream_pipeline - INFO -   Ingested 1000 records from website CSV
+2026-05-26 16:22:54,348 - shopstream_pipeline - INFO - Ingesting CRM JSON: data\raw\crm_export.json
+2026-05-26 16:22:54,390 - shopstream_pipeline - INFO -   Ingested 500 records from CRM JSON
+2026-05-26 16:22:54,393 - shopstream_pipeline - INFO - Ingesting ERP fixed-width: data\raw\erp_customers.txt
+2026-05-26 16:22:54,428 - shopstream_pipeline - INFO -   Ingested 250 records from ERP
+2026-05-26 16:22:54,432 - shopstream_pipeline - INFO - Total records combined: 1750
+2026-05-26 16:22:54,437 - shopstream_pipeline - INFO -   website: 1000 records
+2026-05-26 16:22:54,438 - shopstream_pipeline - INFO -   crm: 500 records
+2026-05-26 16:22:54,439 - shopstream_pipeline - INFO -   erp: 250 records
+2026-05-26 16:22:56,355 - venv - INFO - ============================================================
+2026-05-26 16:22:56,355 - venv - INFO - SHOPSTREAM CUSTOMER DATA QUALITY PIPELINE
+2026-05-26 16:22:56,356 - venv - INFO - Run started: 2026-05-26T16:22:56.355350
+2026-05-26 16:22:56,356 - venv - INFO - ============================================================
+2026-05-26 16:22:56,356 - shopstream_pipeline - INFO - ============================================================
+2026-05-26 16:22:56,356 - shopstream_pipeline - INFO - STEP 1: Data Ingestion
+2026-05-26 16:22:56,356 - shopstream_pipeline - INFO - Ingesting website CSV: data\raw\website_customers.csv
+2026-05-26 16:22:56,366 - shopstream_pipeline - INFO -   Removed 20 test accounts
+2026-05-26 16:22:56,367 - shopstream_pipeline - INFO -   Ingested 1000 records from website CSV
+2026-05-26 16:22:56,369 - shopstream_pipeline - INFO - Ingesting CRM JSON: data\raw\crm_export.json
+2026-05-26 16:22:56,380 - shopstream_pipeline - INFO -   Ingested 500 records from CRM JSON
+2026-05-26 16:22:56,382 - shopstream_pipeline - INFO - Ingesting ERP fixed-width: data\raw\erp_customers.txt
+2026-05-26 16:22:56,394 - shopstream_pipeline - INFO -   Ingested 250 records from ERP
+2026-05-26 16:22:56,398 - shopstream_pipeline - INFO - Total records combined: 1750
+2026-05-26 16:22:56,399 - shopstream_pipeline - INFO -   website: 1000 records
+2026-05-26 16:22:56,399 - shopstream_pipeline - INFO -   crm: 500 records
+2026-05-26 16:22:56,400 - shopstream_pipeline - INFO -   erp: 250 records
+2026-05-26 16:22:56,400 - venv - INFO - STEP 2: Cleaning & Standardization
+2026-05-26 16:22:56,433 - venv - INFO -   Invalid emails: 7
+2026-05-26 16:22:56,434 - venv - INFO -   Null regions after standardization: 271
+2026-05-26 16:22:56,434 - venv - INFO -   Records after cleaning: 1750
+2026-05-26 16:22:56,434 - venv - INFO - STEP 3: Deduplication
+2026-05-26 16:22:57,812 - venv - INFO -   Records before deduplication: 1750
+2026-05-26 16:22:57,812 - venv - INFO -   Duplicate records removed: 1032
+2026-05-26 16:22:57,812 - venv - INFO -   Records after deduplication: 718
+2026-05-26 16:22:57,813 - venv - INFO - STEP 4: Quality Validation
+2026-05-26 16:22:57,823 - venv - INFO - ============================================================
+2026-05-26 16:22:57,823 - venv - INFO - DATA QUALITY REPORT
+2026-05-26 16:22:57,824 - venv - INFO - ============================================================
+2026-05-26 16:22:57,917 - venv - INFO - ============================================================
+2026-05-26 16:22:57,919 - venv - INFO - ============================================================
+2026-05-26 16:22:57,919 - venv - INFO - STEP 5: Generating EDA visualization...
+2026-05-26 16:23:01,457 - venv - INFO -   EDA report saved: data\processed\customer_quality_report.png
+2026-05-26 16:23:01,458 - venv - INFO - STEP 6: Exporting Results
+2026-05-26 16:26:48,222 - shopstream_pipeline - INFO - ============================================================
+2026-05-26 16:26:48,222 - shopstream_pipeline - INFO - STEP 1: Data Ingestion
+2026-05-26 16:26:48,222 - shopstream_pipeline - INFO - Ingesting website CSV: data\raw\website_customers.csv
+2026-05-26 16:26:48,251 - shopstream_pipeline - INFO -   Removed 20 test accounts
+2026-05-26 16:26:48,253 - shopstream_pipeline - INFO -   Ingested 1000 records from website CSV
+2026-05-26 16:26:48,257 - shopstream_pipeline - INFO - Ingesting CRM JSON: data\raw\crm_export.json
+2026-05-26 16:26:48,270 - shopstream_pipeline - INFO -   Ingested 500 records from CRM JSON
+2026-05-26 16:26:48,273 - shopstream_pipeline - INFO - Ingesting ERP fixed-width: data\raw\erp_customers.txt
+2026-05-26 16:26:48,287 - shopstream_pipeline - INFO -   Ingested 250 records from ERP
+2026-05-26 16:26:48,291 - shopstream_pipeline - INFO - Total records combined: 1750
+2026-05-26 16:26:48,293 - shopstream_pipeline - INFO -   website: 1000 records
+2026-05-26 16:26:48,294 - shopstream_pipeline - INFO -   crm: 500 records
+2026-05-26 16:26:48,295 - shopstream_pipeline - INFO -   erp: 250 records

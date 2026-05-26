@@ -41,7 +41,7 @@ def deduplicate_customers(df: pd.DataFrame) -> pd.DataFrame:
 
         # GDPR: opt-out from any source is final
         if "opt_out" in group.columns:
-            best["opt_out"] = group["opt_out"].fillna(0).astype(bool).any()
+            best["opt_out"] = bool(group["opt_out"].fillna(False).astype(bool).any())
 
         # Provenance tracking
         best["sources"] = ",".join(group["source"].unique())
@@ -63,6 +63,8 @@ def deduplicate_customers(df: pd.DataFrame) -> pd.DataFrame:
 
     # Append invalid-email records (cannot be deduplicated by email)
     result = pd.concat([deduped, invalid_df], ignore_index=True)
+    if "opt_out" in result.columns:
+        result["opt_out"] = result["opt_out"].astype("boolean")
 
     removed = initial_count - len(result)
     logger.info(f"  Records before deduplication: {initial_count}")
